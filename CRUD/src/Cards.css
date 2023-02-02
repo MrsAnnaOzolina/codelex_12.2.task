@@ -1,0 +1,27 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  .dogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  min-width: 500px;
+    gap: 20px;
+  }
+ .dogs__image{
+    border-radius: 20px;
+  width: 500px;
+  height: 330px;
+ object-fit: cover;
+ }
+ .dosg__card{
+    background-color:#f06292 ;
+    border-radius: 20px;
+    width: 500px;
+    height: 600px;
+ }
+button{
+    margin-left: 20px;
+}
