@@ -91,6 +91,10 @@ const Dogs = () => {
   }
   return (
     <div>
+        <div className="cardLength"> {dog.length} </div>
+      <br></br>
+      <br></br> 
+      <div>
       {editbtn &&
         <label><h2>Correct item</h2>
           <input type='text' name='editfield1'
@@ -100,7 +104,7 @@ const Dogs = () => {
           <input type="text" name='editfield2' defaultValue={editfile.editfield2} onChange={(g) => { handleInputChange(g) }} />
           <button className='waves-effect waves-light btn' onClick={() => changeData(Number(editfile.editfield0))}>Update</button></label>
       }
-
+    </div>
       <div className='dogs'>
         {dog.map((item: Dogss[], i: number) => {
           return (
