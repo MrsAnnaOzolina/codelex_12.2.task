@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './Cards.css'
 import axios from "axios"
-import DogInfo from './Editbtn'
+import DogCards from './Editbtn'
 
 const baseURL = 'http://localhost:3004/dogs'
 
@@ -45,6 +45,7 @@ const Dogs = () => {
   const deteleDog = async (i: number) => {
     await axios.delete<Dogss[]>(`${baseURL}/` + i)
     setDog(dog.filter((p) => p.id !== i));
+    DogCards();
   }
 
   const editDogs = async (c: number) => {
@@ -121,7 +122,7 @@ const Dogs = () => {
         })
         }
       </div>
-    // </div>
+     </div>
 
   )
 }
