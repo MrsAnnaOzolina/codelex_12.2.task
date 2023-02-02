@@ -3,14 +3,15 @@ import { useState } from 'react'
 import Dogs from './Cards'
 // import axios from "axios";
 import CreateNewDog from './CreateNewCard'
-import Editbtn from './Editbtn'
+import DogCards from './Editbtn'
+
 
 
 function App() {
  
   return (
     <div>
-    <h1>DOGS</h1>
+    <DogCards />
     <Dogs />
     <CreateNewDog />
     </div>

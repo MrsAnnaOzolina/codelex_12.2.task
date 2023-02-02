@@ -20,8 +20,9 @@
     background-color:#f06292 ;
     border-radius: 20px;
     width: 500px;
-    height: 600px;
+    min-height: 600px;
  }
 button{
     margin-left: 20px;
+    margin-bottom: 20px;
 }
